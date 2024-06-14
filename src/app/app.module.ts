@@ -13,13 +13,13 @@ import { SharedModule } from './shared/shared.module';
 import { FullComponent } from './layouts/full/full.component';
 import { AppHeaderComponent } from './layouts/full/header/header.component';
 import { AppSidebarComponent } from './layouts/full/sidebar/sidebar.component';
-import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { SignupComponent } from './signup/signup.component';
 import { NgxUiLoaderConfig, NgxUiLoaderModule, SPINNER } from 'ngx-ui-loader';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { LoginComponent } from './login/login.component';
-import { Token } from '@angular/compiler';
 import { TokenInterceptorInterceptor } from './services/token-interceptor.interceptor';
+import { ConfirmationComponent } from './material-component/dialog/confirmation/confirmation.component';
 
 const ngxUiLoaderConfig: NgxUiLoaderConfig ={
   text: "Loading...",
@@ -43,6 +43,7 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig ={
     SignupComponent,
     ForgotPasswordComponent,
     LoginComponent,
+    ConfirmationComponent,
     
    ],
   imports: [

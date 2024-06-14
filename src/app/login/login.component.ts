@@ -5,8 +5,7 @@ import { UserService } from '../services/user.service';
 import { MatDialogRef } from '@angular/material/dialog';
 import { NgxUiLoaderService } from 'ngx-ui-loader';
 import { SnackbarService } from '../services/snackbar.service';
-import { GlobalConstants } from '../shared/global-constants';
-import { error } from 'console';
+import { GlobalConstants } from '../shared/global-constants'
 
 @Component({
   selector: 'app-login',
@@ -46,6 +45,7 @@ export class LoginComponent implements OnInit {
       localStorage.setItem('token', response.token);
       this.router.navigate(['/cafe/dashboard']);
     },(error)=>{
+      this.ngxService.stop();
       if(error.error?.message){
         this.responseMessage = error.error?.message;
       }

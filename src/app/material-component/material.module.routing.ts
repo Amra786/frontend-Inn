@@ -3,4 +3,13 @@ import { DashboardComponent } from '../dashboard/dashboard.component';
 
 
 export const MaterialRoutes: Routes = [
+
+    {
+        path: 'category',
+        
+    
+        data: {
+            expectedRole: ['admin']
+        }
+    }
 ];
