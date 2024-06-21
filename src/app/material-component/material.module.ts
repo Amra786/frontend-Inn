@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { CdkTableModule } from '@angular/cdk/table'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { ViewBillProductsComponent } from './dialog/view-bill/view-bill-products.component';
+
 import { ChangePasswordComponent } from './dialog/change-password/change-password.component';
 import { MaterialModule } from '../shared/material-module';
 import { MaterialRoutes } from './material.module.routing';
@@ -14,7 +14,9 @@ import { CategoryComponent } from './dialog/category/category.component';
 import { ManageProductComponent } from './manage-product/manage-product.component';
 import { ProductComponent } from './dialog/product/product.component';
 import { ManageOrderComponent } from './manage-order/manage-order.component';
-import { ViewBillComponent } from './view-bill-products/view-bill.component';
+import { ViewBillComponent } from './view-bill/view-bill.component';
+import { ViewBillProductsComponent } from './dialog/view-bill-products/view-bill-products.component';
+import { ManageUserComponent } from './manage-user/manage-user.component';
 
 @NgModule({
   imports: [
@@ -37,6 +39,7 @@ import { ViewBillComponent } from './view-bill-products/view-bill.component';
     ProductComponent,
     ManageOrderComponent,
     ViewBillComponent,
+    ManageUserComponent,
     
   ]
 })
